@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-utama: "Poppins", sans-serif;
+
+  --text-color: #fff;
+  --bg-color: rgb(5, 9, 31);
+  --main-color: rgb(3, 119, 227);
+  --secunder-color: #1d293e;
+  --third-color: #7564e5;
+  --other-color-2: #1a2436;
+
+  --other-color: #b5b9bf;
+
+  --h1-font: 3rem;
+  --h2-font: 2.9rem;
+  --p-font: 1rem;
+}
+body {
+  font-family: var(--font-utama);
+  height: 100vh;
+  width: 100%;
+  background-image: url(/peakpx2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.utama {
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+}
+
+.article-1 {
+  height: 90%;
+  width: 1200px;
+  padding: 8px;
+  border-radius: 24px;
+  border: 2px solid black;
+  background-color: var(--other-color-2);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--other-color-);
+  border-radius: 16px;
+}
+
+.penghitung-kata {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr repeat(3, 0) 0;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 8px;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 8px;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  padding: 8px;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+  padding: 8px;
+}
+.div5 {
+  grid-area: 1 / 5 / 2 / 6;
+  padding: 8px;
+}
+
+/* lain */
+.elemen {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kolom-kata {
+  padding: 8px;
+  height: 70%;
+  width: 100%;
+}
+
+.submit {
+  padding: 8px;
+}
+
+.h2 {
+  font-size: 0.6rem;
+}
+
+/*  */
+@media (max-width: 728px) {
+  .article-1 {
+    width: 95%;
+  }
+
+  .elemen {
+    height: 80%;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #waktu-baca {
+    font-size: 1rem !important;
+  }
+
+  .h2 {
+    font-size: 0.6rem !important;
+  }
+}
